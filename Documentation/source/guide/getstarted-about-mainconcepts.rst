@@ -19,9 +19,9 @@ In natron an image is only a stack of black and white images called channels. ch
 The Color layer is the base layer. Color layer has channels R,G,B,A
 R,G,B codes the color of the pixels in Red Green blue
 A codes the transparency of the pixel called Alpha. When A=0 the pixel is transparent. When A=1 the pixel is transparent
-The image can have as many layers as you want describing, the motion, the depth of your image or whatever else you want
+The image can have as many layers as you want describing the motion, the depth of your image, or whatever else you want
 
-.. note::  You cannot see the stacking of the layers as in  as in Photoshop or After Effects. In Natron you will have different branches of your node tree that are Merged together. The Merge node is the good way to stack layers.
+.. note::  You cannot see the stacking of the layers as in Photoshop or After Effects. In Natron you will have different branches of your node tree that are merged together. The Merge node is the good way to stack layers.
 
 Image Flow
 ##########
@@ -49,7 +49,7 @@ We create a repetitive texture with the cell node.
 
 Sometimes procedural images can be generated from scratch in Natron. This is the only case when a node has no input.
 
-We mix together both images with a merge node (blue). The mixer nodes can have several inputs
+We mix together both images with a merge node (blue). The mixer nodes can have several inputs.
 
 To see the result in the viewer we connect the Viewer node to the output of the Merge.
 
@@ -58,7 +58,7 @@ To see the result in the viewer we connect the Viewer node to the output of the 
 
 To save the result to disk, we connect the Write node (yellow).
 The result will only be saved to disk if we launch the render of the image 
-by clicking "render" in the node properties or Render menu 
+by clicking "render" in the node properties or Render menu. 
 A node can have only one resulting output image. This one result can still be used by several nodes (here Write and Viewer, thus appearing like multiple output connections).
 Here we use a "dot" node to avoid this ambiguous situation
 
